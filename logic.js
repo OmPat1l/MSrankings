@@ -91,11 +91,11 @@ const team = [
 
 
 
-const randomEmoji = () => {
-    const emojis = ['👏', '👍', '🙌', '🤩', '🔥', '⭐️', '🏆', '💯'];
-    let randomNumber = Math.floor(Math.random() * emojis.length);
-    return emojis[randomNumber];
-};
+// const randomEmoji = () => {
+//     const emojis = ['👏', '👍', '🙌', '🤩', '🔥', '⭐️', '🏆', '💯'];
+//     let randomNumber = Math.floor(Math.random() * emojis.length);
+//     return emojis[randomNumber];
+// };
 // const randomImage = () => {
 //     const image = ['https://www.formula1.com/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png.transform/2col-retina/image.png', 'https://www.formula1.com/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png.transform/2col-retina/image.png', 'https://www.formula1.com/content/dam/fom-website/drivers/D/DANRIC01_Daniel_Ricciardo/danric01.png.transform/2col-retina/image.png', 'https://www.formula1.com/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png.transform/2col-retina/image.png', 'https://www.formula1.com/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png.transform/2col-retina/image.png', 'https://www.formula1.com/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/2col-retina/image.png', 'https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/2col-retina/image.png', 'https://www.formula1.com/content/dam/fom-website/drivers/S/SEBVET01_Sebastian_Vettel/sebvet01.png.transform/2col-retina/image.png'];
 // let randomNumber = Math.floor(Math.random() * image.length);
@@ -128,7 +128,7 @@ team.forEach(member => {
 			</div>
 			<div class="u-text--right c-kudos">
 				<div class="u-mt--8">
-					<strong>${member.kudos}</strong> ${randomEmoji()}
+					<strong>${member.kudos}</strong>
 				</div>
 			</div>
 		</div>
@@ -151,17 +151,17 @@ team.forEach(member => {
 
 // Find Winner from sent kudos by sorting the drivers in the team array
 {/* <img class="c-avatar c-avatar--lg" src="${winner.img}" /> */ }
-let sortedTeam = team.sort((a, b) => b.kudos - a.kudos);
-let winner = sortedTeam[0];
-{ }
-// Render winner card
-const winnerCard = document.getElementById('winner');
-winnerCard.innerHTML = `
-	<div class="u-text-small u-text--medium u-mb--16">Best Performer</div>
+// let sortedTeam = team.sort((a, b) => b.kudos - a.kudos);
+// let winner = sortedTeam[0];
+// { }
+// // Render winner card
+// const winnerCard = document.getElementById('winner');
+// winnerCard.innerHTML = `
+// 	<div class="u-text-small u-text--medium u-mb--16">Best Performer</div>
     
     
 	
-	<h3 class="u-mt--16">${winner.name}</h3>
-    <span class="u-text--teal u-text--small">${winner.name}</span> 
+// 	<h3 class="u-mt--16">${winner.name}</h3>
+//     <span class="u-text--teal u-text--small">${winner.name}</span> 
 	
-`;
+// `;
